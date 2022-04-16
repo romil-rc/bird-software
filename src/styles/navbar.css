@@ -1,0 +1,30 @@
+#navbar {
+    background-image: url("../assets/headerBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-image: url("../assets/headerBg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    #nav-ul{
+        background-image: url("../assets/bgImg.png");
+        position: absolute ;
+        width: 100%; 
+        padding-left: 0px;
+        /* transition: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        transition-duration: 500; */
+    }
+
+}

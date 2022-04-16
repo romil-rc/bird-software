@@ -1,0 +1,42 @@
+#footer {
+    position: relative;
+    background-image: url("../assets/footerBg.png");
+    /* color: white; */
+    /* opacity: 1; */
+    /* height: 80px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.connections{
+    position: relative;
+    top: -50px;
+}
+.belowfooter{
+    position: relative;
+    top: -30px;
+}
+#belowFooter{
+    background-image: url("../assets/belowRectangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        position: relative;
+        background-image: url("../assets/footerBg.png");
+        top: 40px;
+        /* color: white; */
+        /* opacity: 1; */
+        /* height: 80px; */
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+    }
+    .belowfooter{
+        position: relative;
+        top: -20px;
+    }
+}

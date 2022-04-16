@@ -1,0 +1,52 @@
+#bitcoinBg {
+    background-image: url("../assets/bitcoinLogoBg.png");
+    /* color: white; */
+    /* opacity: 1; */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 1000px; */
+    position: relative;
+}
+.image1 {
+    position: absolute;
+    right: 95px;
+    top: 50px;
+    /* border: 1px red solid; */
+    width: 600px;
+    height: 600px;
+}
+
+.image2 {
+    position: relative;
+    top: 20px;
+    left: -35px;
+    /* border: 1px green solid; */
+    height: 270px;
+    width: 270px;
+}
+
+.expBtn{
+    /* border: 3px solid grey; */
+    /* width: 120px; */
+    background-image: url("../assets/btn.png");
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .image1 {
+        position: absolute;
+        right: 0;
+        top: 325px;
+        /* border: 1px red solid; */
+        width: 400px;
+        height: 400px;
+    }
+    .image2 {
+        position: relative;
+        top: 30px;
+        left: 30%;
+        /* border: 1px green solid; */
+        height: 180px;
+        width: 180px;
+    }
+}
