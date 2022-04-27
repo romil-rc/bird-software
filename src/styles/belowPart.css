@@ -1,0 +1,112 @@
+#belowPart{
+    position: relative;
+    top: -150px;
+}
+#left{
+    width: 50%;
+}
+#right{
+    position: relative;
+    top: 80px;
+}
+#glass{
+    height: 300px;
+    width: 200px;
+}
+#timba{
+    position: relative;
+    top: -313px;
+    left: -15px;
+    width: 90px;
+}
+#stick{
+    position: relative;
+    top: -360px;
+    left: 27px;
+    height: 250px;
+}
+#over{
+    position: relative;
+    left: -135px;
+    top: 20px;
+}
+#defi{
+    position: relative;
+    top: -150px;
+}
+#ellipse{
+    position: relative;
+    top: -230px;
+    left: 130px;
+    width: 60%;
+    height: 100px;
+    z-index: -1;
+}
+#mi{
+    position: relative;
+    top: -150px;
+    width: 450px;
+}
+#audit{
+    position: relative;
+    top: -50px;
+}
+#smallellipse{
+    position: relative;
+    top: -200px;
+    /* left: 30px; */
+    height: 100px;
+    z-index: -1;
+}
+#di2{
+    position: relative;
+    top: -40px;
+}
+#launch{
+    position: relative;
+    top: -100px;
+    width: 24rem;
+}
+#cutellipse{
+    position: relative;
+    top: -200px;
+}
+
+@media only screen and (max-width: 600px) {
+    #left{
+        width: auto;
+    }
+    #dapps{
+        position: relative;
+        top: -170px;
+    }
+    #mi{
+        position: relative;
+        top: 0px;
+    }
+    #audit{
+        position: relative;
+        top: -170px;
+    }
+    #expert{
+        position: relative;
+        top: -170px;
+    }
+    #di2{
+        position: relative;
+        top: 0px;
+    }
+    #smartcontract{
+        position: relative;
+        top: -200px;
+    }
+    #launchpad{
+        position: relative;
+        top: -220px;
+        width: 24rem;
+    }
+    #launch{
+        position: relative;
+        top: 0px;
+    }
+}

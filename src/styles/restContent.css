@@ -1,0 +1,18 @@
+#restContent{
+    position: relative;
+    top: -200px;
+}
+.expBtn{
+    /* border: 3px solid grey; */
+    /* width: 120px; */
+    background-image: url("../assets/btn.png");
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    #restContent{
+        position: relative;
+        top: -400px;
+    }
+
+}

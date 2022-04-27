@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/footer.css';
+import '../styles/bigDiv.css';
 import connections from '../assets/connections.png';
 import companyLogo from '../assets/companyLogo.png';
+import dots from '../assets/dots.png';
 
 const Footer = () => {
   return (
     <>
-    <div className='bottom-0 sticky z-50 bg-inherit h-fit p-5 md:p-0' id='footer'>
+    <div className='bottom-0 sticky z-40 bg-inherit h-fit p-5 md:p-0' id='footer'>
         <div className='flex justify-center'>
             <img src={connections} className="connections" alt="conn" />
         </div>
@@ -18,6 +19,9 @@ const Footer = () => {
           <img src={companyLogo} className="md:w-[52rem] w-72 md:pb-9 pb-5" alt="" />
         </div>
       </div>
+    </div>
+    <div className='md:flex hidden justify-end' id='dotDiv'>
+      <img src={dots} alt="dots" />
     </div>
     </>
   )
