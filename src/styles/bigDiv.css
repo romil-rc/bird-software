@@ -1,6 +1,6 @@
 #footer {
     position: relative;
-    background-image: url("../assets/footerBg.png");
+    background-image: url("../assets/footerBg.svg");
     /* color: white; */
     /* opacity: 1; */
     /* height: 80px; */
@@ -17,7 +17,7 @@
     top: -30px;
 }
 #belowFooter{
-    background-image: url("../assets/belowRectangle.png");
+    background-image: url("../assets/belowRectangle.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@
 @media only screen and (max-width: 600px) {
     #footer {
         position: relative;
-        background-image: url("../assets/footerBg.png");
+        background-image: url("../assets/footerBg.svg");
         top: 40px;
         /* color: white; */
         /* opacity: 1; */

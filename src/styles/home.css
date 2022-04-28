@@ -1,12 +1,12 @@
-#bitcoinBg {
-    background-image: url("../assets/bitcoinLogoBg.png");
-    /* color: white; */
-    /* opacity: 1; */
+/* #bitcoinBg {
+    background-image: url("../assets/bitcoinLogoBg.svg");
+    color: white;
+    opacity: 1;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: 1000px; */
+    background-size: 1000px;
     position: relative;
-}
+} */
 .image1 {
     position: absolute;
     right: 95px;
@@ -28,7 +28,7 @@
 .expBtn{
     /* border: 3px solid grey; */
     /* width: 120px; */
-    background-image: url("../assets/btn.png");
+    background-image: url("../assets/btn.svg");
     background-repeat: no-repeat;
 }
 

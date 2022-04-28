@@ -1,12 +1,12 @@
 import React from 'react'
-import packageImg from '../assets/package.png';
-import stepperStatus from '../assets/stepperStatus.png';
-import bitcoinLogoBg from '../assets/bitcoinLogoBg.png';
-import bitcoinLogo from '../assets/bitcoinLogo.png';
-import facebook from '../assets/facebook.png';
-import insta from '../assets/insta.png';
-import twt from '../assets/twt.png';
-import line from '../assets/line.png';
+import packageImg from '../assets/package.svg';
+import stepperStatus from '../assets/stepperStatus.svg';
+import bitcoinLogoBg from '../assets/bitcoinLogoBg.svg';
+import bitcoinLogo from '../assets/bitcoinLogo.svg';
+import facebook from '../assets/facebook.svg';
+import insta from '../assets/insta.svg';
+import twt from '../assets/twt.svg';
+import line from '../assets/line.svg';
 import '../styles/home.css';
 
 const Home = () => {

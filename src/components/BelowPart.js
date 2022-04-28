@@ -1,16 +1,16 @@
 import React from 'react';
-import glass from '../assets/glass.png';
-import timba from '../assets/timba.png';
-import stick from '../assets/stick.png';
-import uidi from '../assets/uidi.png';
-import ellipse from '../assets/ellipse.png';
-import dapps from '../assets/dapps.png';
-import di from '../assets/di.png';
-import smallellipse from '../assets/smallellipse.png';
-import di2 from '../assets/di2.png';
-import hwwi from '../assets/hwwi.png';
-import onboard from '../assets/onboard.png';
-import cutellipse from '../assets/cutellipse.png';
+import glass from '../assets/glass.svg';
+import timba from '../assets/timba.svg';
+import stick from '../assets/stick.svg';
+import uidi from '../assets/uidi.svg';
+import ellipse from '../assets/ellipse.svg';
+import dapps from '../assets/dapps.svg';
+import audit from '../assets/audit.svg';
+import smallellipse from '../assets/smallellipse.svg';
+import expert from '../assets/expert.svg';
+import hwwi from '../assets/hwwi.svg';
+import onboard from '../assets/onboard.svg';
+import cutellipse from '../assets/cutellipse.svg';
 import '../styles/belowPart.css';
 
 const BelowPart = () => {
@@ -74,7 +74,7 @@ const BelowPart = () => {
         <div id='audit' className='md:flex md:flex-col md:justify-around md:px-10'>
             <div className='md:flex md:pt-0 p-5 md:p-0'>
                 <div className='md:w-1/3 md:pl-24 pl-0 w-auto hidden md:flex'>
-                    <img className='w-64 h-72' src={di} alt="di" />
+                    <img className='w-64 h-72' src={audit} alt="di" />
                 </div>
                 <div className='text-left space-y-2 md:w-2/3 md:px-32'>
                     <p className='text-emerald-300 font-medium'>AUDIT</p>
@@ -85,7 +85,7 @@ const BelowPart = () => {
                     </div>
                 </div>
                 <div className='p-5 w-auto flex md:hidden'>
-                    <img className='w-auto' src={di} alt="di" />
+                    <img className='w-auto' src={audit} alt="di" />
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ const BelowPart = () => {
                 <p className='text-slate-400 font-medium md:tracking-widest md:w-[30rem]'>Experience the guidance of various trained professionals and developers who are with you at every phase of your projects. We not only develop your project but also give out the best recommendations for turning it into a huge success</p>
             </div>
             <div className='md:w-1/3 w-auto p-5 md:p-0'>
-                <img className='md:w-80 w-full' src={di2} alt="di2" id='di2' />
+                <img className='md:w-80 w-full' src={expert} alt="expert" id='expertImg' />
             </div>
         </div>
         <div id='smartcontract' className='md:flex md:flex-col md:justify-around md:px-10'>

@@ -1,8 +1,8 @@
 import React from 'react';
+import connections from '../assets/connections.svg';
+import companyLogo from '../assets/companyLogo.svg';
+import dots from '../assets/dots.svg';
 import '../styles/bigDiv.css';
-import connections from '../assets/connections.png';
-import companyLogo from '../assets/companyLogo.png';
-import dots from '../assets/dots.png';
 
 const Footer = () => {
   return (

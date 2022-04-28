@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/bgImg.png");
+  background-image: url("./assets/bgImg.svg");
   /* height: 100%; */
   color: white;
   opacity: 1;

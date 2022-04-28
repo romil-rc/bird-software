@@ -1,5 +1,5 @@
 #navbar {
-    background-image: url("../assets/headerBg.png");
+    background-image: url("../assets/headerBg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,14 +11,14 @@
         position: sticky;
         top: 0;
         z-index: 1;
-        background-image: url("../assets/headerBg.png");
+        background-image: url("../assets/headerBg.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
     }
     #nav-ul{
-        background-image: url("../assets/bgImg.png");
+        background-image: url("../assets/bgImg.svg");
         position: absolute ;
         width: 100%; 
         padding-left: 0px;

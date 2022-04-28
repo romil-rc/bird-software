@@ -1,5 +1,5 @@
 import React from 'react'
-import satellite from '../assets/satellite.png';
+import satellite from '../assets/satellite.svg';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 import '../styles/slideContent.css';
 

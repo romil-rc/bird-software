@@ -58,7 +58,7 @@
     height: 100px;
     z-index: -1;
 }
-#di2{
+#expertImg{
     position: relative;
     top: -40px;
 }
@@ -92,7 +92,7 @@
         position: relative;
         top: -170px;
     }
-    #di2{
+    #expertImg{
         position: relative;
         top: 0px;
     }
