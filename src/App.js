@@ -5,6 +5,9 @@ import BigDiv from './components/BigDiv';
 import BelowPart from './components/BelowPart';
 import SlideContent from './components/SlideContent';
 import RestContent from './components/RestContent';
+import JoinUs from './components/JoinUs';
+import Why from './components/Why';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <BelowPart />
       <SlideContent />
       <RestContent />
+      <JoinUs />
+      <Why />
+      <Footer />
     </div>
   );
 }

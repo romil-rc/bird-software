@@ -1,0 +1,27 @@
+#joinUs{
+    position: relative;
+    top: -450px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.expBtn{
+    /* border: 3px solid grey; */
+    /* width: 120px; */
+    background-image: url("../assets/btn.svg");
+    background-repeat: no-repeat;
+}
+#code{
+    background-image: url("../assets/blackBg.svg");
+    background-repeat: no-repeat;
+}
+#scroll{
+    position: absolute;
+    right: 95px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #scroll{
+        position: absolute;
+        right: 22px;
+    }
+}

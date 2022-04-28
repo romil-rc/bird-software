@@ -1,0 +1,53 @@
+#why{
+    position: relative;
+    top: -300px;
+}
+#overlap{
+    background: linear-gradient(123.64deg, rgba(255, 255, 255, 0) -22.38%, rgba(255, 255, 255, 0.0312) 70.38%);
+    backdrop-filter: blur(18px);
+/* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    margin-top: -4px;
+}
+#neon7{
+    position: relative;
+    top: -100px;
+}
+#hr2{
+    position: relative;
+    top: -100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    opacity: 0.4;
+}
+#contact{
+    position: relative;
+    top: -100px;
+}
+.expBtn{
+    /* border: 3px solid grey; */
+    width: 168px;
+    height: 60px;
+    background-image: url("../assets/btn.svg");
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #neon7{
+        position: relative;
+        top: -150px;
+    }
+    
+    #contact{
+        position: relative;
+        top: -200px;
+    }
+    #hr2{
+        display: none;
+    }
+    #lastSection{
+        position: relative;
+        top: -180px;
+    }
+}

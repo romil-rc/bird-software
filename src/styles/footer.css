@@ -1,0 +1,12 @@
+#fixedFooter{
+    position: relative;
+    top: -200px;
+}
+
+@media only screen and (max-width: 600px) {
+    #fixedFooter{
+        position: relative;
+        top: -400px;
+    }
+    
+}

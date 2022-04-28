@@ -8,11 +8,24 @@
     background-image: url("../assets/btn.svg");
     background-repeat: no-repeat;
 }
+#neon6{
+    position: relative;
+    top: -200px;
+}
 
 @media only screen and (max-width: 600px) {
     #restContent{
         position: relative;
         top: -400px;
     }
-
+    #neon6{
+        position: relative;
+        top: -130px;
+    }
+    .expBtn{
+        /* border: 3px solid grey; */
+        width: 180px;
+        background-image: url("../assets/btn.svg");
+        background-repeat: no-repeat;
+    }
 }

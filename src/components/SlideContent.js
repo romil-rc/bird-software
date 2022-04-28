@@ -6,7 +6,7 @@ import '../styles/slideContent.css';
 const SlideContent = () => {
   return (
     <div className='md:flex md:justify-end p-5 md:p-0' id='slideContent'>
-      <div className='md:inline-flex md:justify-evenly bg-blue-900 md:space-x-10 rounded-lg drop-shadow-xl p-5 md:p-0'>
+      <div className='md:inline-flex md:justify-evenly bg-[#041856] md:space-x-10 rounded-lg drop-shadow-xl p-5 md:p-0'>
           <div>
               <img className='w-96' src={satellite} alt="sat" id='satellite' />
           </div>
