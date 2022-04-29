@@ -3,7 +3,7 @@
     top: -150px;
 }
 #left{
-    width: 50%;
+    /* width: 50%; */
 }
 #right{
     position: relative;
@@ -44,7 +44,7 @@
 }
 #mi{
     position: relative;
-    top: -150px;
+    /* top: -150px; */
     width: 450px;
 }
 #audit{

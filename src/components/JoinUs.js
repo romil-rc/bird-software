@@ -5,8 +5,8 @@ import '../styles/joinUs.css';
 
 const JoinUs = () => {
   return (
-    <div id='joinUs' className='md:flex md:justify-around py-10 p-5'>
-        <div className='text-left space-y-10 md:w-96 w-auto'>
+    <div id='joinUs' className='md:flex md:justify-around lg:flex lg:justify-around py-10 p-5'>
+        <div className='text-left space-y-10 md:w-96 lg:w-96 w-auto'>
             <hr className='-mb-5 bg-white h-[2px]' />
             <div className=''>
                 <p className='font-semibold text-lg'>Join Us</p>
@@ -17,15 +17,15 @@ const JoinUs = () => {
                 <div className='expBtn text-left p-5 font-semibold'><p className='cursor-pointer inline-block'>Explore More</p></div>
             </div>
         </div>
-        <div className='py-10 space-y-6 md:w-96 w-auto'>
-            <div className='flex justify-end space-x-3 md:text-xs text-sm'>
+        <div className='py-10 space-y-6 md:w-96 lg:w-96 w-auto'>
+            <div className='flex justify-end space-x-3 md:text-sm lg:text-base text-sm'>
                 <p>Node</p>
                 <p>Java</p>
                 <p>Curl</p>
             </div>
-            <div className='flex p-2 md:w-[28rem] w-auto' id='code'>
+            <div className='flex p-2 sm:w-auto md:w-auto lg:w-[28rem] w-auto' id='code'>
                 <img src={code} alt="code" />
-                <img src={scrollBar} alt="scroll" id='scroll' />
+                <img className='sm:hidden md:hidden block' src={scrollBar} alt="scroll" id='scroll' />
             </div>
         </div>
     </div>
