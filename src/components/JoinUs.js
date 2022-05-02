@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import code from '../assets/code.svg';
 import scrollBar from '../assets/scrollBar.svg';
 import '../styles/joinUs.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { motion } from 'framer-motion';
 
 const JoinUs = () => {
+
+    useEffect(()=> {
+        AOS.init({ duration: 2000 });
+    }, []);
+
   return (
     <div id='joinUs' className='md:flex md:justify-around lg:flex lg:justify-around py-10 p-5'>
-        <div className='text-left space-y-10 md:w-96 lg:w-96 w-auto'>
+        <div data-aos='fade-up' className='text-left space-y-10 md:w-96 lg:w-96 w-auto'>
             <hr className='-mb-5 bg-white h-[2px]' />
             <div className=''>
                 <p className='font-semibold text-lg'>Join Us</p>
@@ -14,10 +22,17 @@ const JoinUs = () => {
             <div className='space-y-3'>
                 <p className='font-bold text-2xl'>BE A PART OF OUR HAPPY COMMUNITY</p>
                 <p className='opacity-70'>We take immense pride in our achievements and have a happy and satisfied community that trusts our work wholeheartedly. Then what are you waiting for ,come and be a part of the merklabs family, because we are here always for you.</p>
-                <div className='expBtn text-left p-5 font-semibold'><p className='cursor-pointer inline-block'>Explore More</p></div>
+                <motion.div className='expBtn text-left p-5 font-semibold'
+                    whileHover={{
+                        scale:1.1,
+                        textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                    }}
+                >
+                    <p className='cursor-pointer inline-block'>Explore More</p>
+                </motion.div>
             </div>
         </div>
-        <div className='py-10 space-y-6 md:w-96 lg:w-96 w-auto'>
+        <div data-aos='fade-up' className='py-10 space-y-6 md:w-96 lg:w-96 w-auto'>
             <div className='flex justify-end space-x-3 md:text-sm lg:text-base text-sm'>
                 <p>Node</p>
                 <p>Java</p>
