@@ -1,26 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import merk from '../assets/merk.svg';
 import '../styles/footer.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Footer = () => {
-
-    useEffect(()=> {
-        AOS.init({ duration: 2000 });
-    }, []);
 
   return (
     <div className='sm:flex sm:justify-evenly md:flex md:justify-evenly lg:flex lg:justify-evenly space-y-7 sm:space-y-0 md:space-y-0 lg:space-y-0 py-3' id='fixedFooter'>
         <div className='sm:flex sm:flex-col sm:text-left md:flex md:flex-col md:text-left lg:flex lg:flex-col lg:text-left space-y-5'>
             <div className='flex sm:justify-start md:justify-start lg:justify-start justify-center space-x-4'>
-                <img data-aos='flip-up' className='h-6' src={merk} alt="merk" />
-                <p data-aos='fade-right' className='font-semibold text-xl'>Merk</p>
+                <img className='h-6' src={merk} alt="merk" />
+                <p className='font-semibold text-xl'>Merk</p>
             </div>
-            <p data-aos='fade-right' className='opacity-70'>Copyright © 2021</p>
-            <p data-aos='fade-right' className='opacity-70'>Design By Merk Labs</p>
+            <p className='opacity-70'>Copyright © 2021</p>
+            <p className='opacity-70'>Design By Merk Labs</p>
         </div>
-        <div data-aos='fade-up' className='sm:text-left md:text-left lg:text-left space-y-3 sm:space-y-5 md:space-y-5 lg:space-y-5'>
+        <div className='sm:text-left md:text-left lg:text-left space-y-3 sm:space-y-5 md:space-y-5 lg:space-y-5'>
             <p className='text-sm'>SERVICES</p>
             <p className='opacity-70 font-light'>Web Development</p>
             <p className='opacity-70 font-light'>App Development</p>
@@ -28,7 +22,7 @@ const Footer = () => {
             <p className='opacity-70 font-light'>Consultation</p>
             <p className='opacity-70 font-light'>Maintenance</p>
         </div>
-        <div data-aos='fade-up' className='sm:text-left md:text-left lg:text-left space-y-3 sm:space-y-5 md:space-y-5 lg:space-y-5'>
+        <div className='sm:text-left md:text-left lg:text-left space-y-3 sm:space-y-5 md:space-y-5 lg:space-y-5'>
             <p className='text-sm'>COMPANY</p>
             <p className='opacity-70 font-light'>About</p>
             <p className='opacity-70 font-light'>Contact</p>
@@ -37,7 +31,7 @@ const Footer = () => {
             <p className='opacity-70 font-light'>Term of Service</p>
             <p className='opacity-70 font-light'>Jobs</p>
         </div>
-        <div data-aos='fade-up' className='sm:text-left md:text-left lg:text-left space-y-3 sm:space-y-5 md:space-y-5 lg:space-y-5'>
+        <div className='sm:text-left md:text-left lg:text-left space-y-3 sm:space-y-5 md:space-y-5 lg:space-y-5'>
             <p className='text-sm'>RESOURCES</p>
             <p className='opacity-70 font-light'>Support</p>
             <p className='opacity-70 font-light'>Documentation</p>

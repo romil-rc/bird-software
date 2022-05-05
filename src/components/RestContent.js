@@ -1,21 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ti from '../assets/ti.svg';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import neon6 from '../assets/neon6.svg';
 import '../styles/restContent.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
 
 const RestContent = () => {
-  
-  useEffect(()=> {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <div className='p-5 sm:p-5 md:p-5 lg:p-10 space-y-2' id='restContent'>
-        <div data-aos='fade-up' className='sm:flex sm:justify-center sm:space-x-3 md:flex md:justify-center md:space-x-5 lg:flex lg:justify-center lg:space-x-5' id="ourTeam">
+        <div className='sm:flex sm:justify-center sm:space-x-3 md:flex md:justify-center md:space-x-5 lg:flex lg:justify-center lg:space-x-5' id="ourTeam">
             <div className='text-left sm:w-1/2 md:w-1/2 lg:w-96 w-auto space-y-2 sm:space-y-5 md:space-y-5 lg:space-y-5'>
                 <p className='text-blue-500 font-medium'>OUR TEAM</p>
                 <p className='font-semibold sm:font-semibold md:font-bold lg:font-bold text-lg sm:text-xl md:text-2xl lg:text-2xl'>MEET THE TEAM OF BEST  DEVELOPERS:</p>
@@ -33,7 +27,7 @@ const RestContent = () => {
                 <img src={ti} alt="ti" />
             </div>
         </div>
-        <div data-aos='fade-up' className='sm:flex sm:justify-around sm:p-5 sm:pt-16 md:flex md:justify-around md:p-5 md:pt-16 lg:flex lg:justify-around lg:p-5 lg:pt-16 space-y-3 lg:space-y-0' id="projects">
+        <div className='sm:flex sm:justify-around sm:p-5 sm:pt-16 md:flex md:justify-around md:p-5 md:pt-16 lg:flex lg:justify-around lg:p-5 lg:pt-16 space-y-3 lg:space-y-0' id="projects">
             <div className='text-left space-y-3'>
                 <p className='text-cyan-400 font-medium'>PROJECTS</p>
                 <p className='text-2xl font-bold sm:w-[25rem] md:w-[28rem] lg:w-[22rem] sm:leading-relaxed md:leading-relaxed lg:leading-relaxed'>We have completed many amazing projects that you will not believe</p>
@@ -42,11 +36,11 @@ const RestContent = () => {
                 <p className='border px-3 py-1 rounded-xl flex space-x-2'>Technology<span></span><ChevronDownIcon className="h-6 w-6 text-white cursor-pointer hover:scale-110 transition-transform"/></p>
             </div>
         </div>
-        <div data-aos='fade-up' className='sm:px-24 md:px-28 lg:px-32 py-10' id='hr'>
+        <div className='sm:px-24 md:px-28 lg:px-32 py-10' id='hr'>
             <hr className='opacity-25' />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-1 sm:gap-2 md:grid-cols-2 md:gap-4 lg:grid-cols-2 lg:gap-4">
-            <div data-aos='flip-left' id='01' className='flex flex-col items-center sm:items-center md:items-end lg:items-end'>
+            <div id='01' className='flex flex-col items-center sm:items-center md:items-end lg:items-end'>
                 <div className='flex justify-end'>
                     <div className='h-80 w-96 opacity-50 bg-blue-900 rounded-xl'>
                         <div className='w-full h-2/5 space-y-3 flex flex-col justify-center items-center rounded-t-xl'>
@@ -73,7 +67,7 @@ const RestContent = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos='flip-right' id='02' className='flex flex-col items-center sm:items-center md:items-start lg:items-start'>
+            <div id='02' className='flex flex-col items-center sm:items-center md:items-start lg:items-start'>
                 <div className='flex justify-end'>
                     <div className='h-80 w-96 opacity-50 bg-blue-900 rounded-xl'>
                         <div className='w-full h-2/5 space-y-3 flex flex-col justify-center items-center rounded-t-xl'>
@@ -100,7 +94,7 @@ const RestContent = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos='flip-left' id='03' className='flex flex-col items-center sm:items-center md:items-end lg:items-end'>
+            <div id='03' className='flex flex-col items-center sm:items-center md:items-end lg:items-end'>
                 <div className='flex justify-end'>
                     <div className='h-80 w-96 opacity-50 bg-blue-900 rounded-xl'>
                         <div className='w-full h-2/5 space-y-3 flex flex-col justify-center items-center rounded-t-xl'>
@@ -127,7 +121,7 @@ const RestContent = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos='flip-right' id='04' className='flex flex-col items-center sm:items-center md:items-start lg:items-start'>
+            <div id='04' className='flex flex-col items-center sm:items-center md:items-start lg:items-start'>
                 <div className='flex justify-end'>
                     <div className='h-80 w-96 opacity-50 bg-blue-900 rounded-xl'>
                         <div className='w-full h-2/5 space-y-3 flex flex-col justify-center items-center rounded-t-xl'>

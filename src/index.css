@@ -11,13 +11,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/bgImg.svg");
+  /* background-image: url("./assets/bgImg.svg"); */
+  background-color: #002f6d;
   /* height: 100%; */
   color: white;
   opacity: 1;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  z-index: -1;
 }
 
 code {
