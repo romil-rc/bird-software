@@ -3,8 +3,8 @@ import connections from '../assets/connections.svg';
 import companyLogo from '../assets/companyLogo.svg';
 import dots from '../assets/dots.svg';
 import '../styles/bigDiv.css';
-import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
+import { AttentionSeeker } from 'react-awesome-reveal';
 
 function Tilt(props) {
   const { options, ...rest } = props;
@@ -29,11 +29,9 @@ const Footer = () => {
     <>
     <div className='bottom-0 sticky z-40 bg-inherit h-fit p-5 lg:p-0' id='footer'>
         <div className='flex justify-center'>
-            <motion.img src={connections} className="connections" alt="conn" 
-              initial={{ y: -100 }}
-              animate={{ y: 0 }}
-              transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
-            />
+          <AttentionSeeker effect='bounce'>
+            <img src={connections} className="connections" alt="conn" />
+          </AttentionSeeker>
         </div>
     </div>
     <div className='lg:px-32 px-5 w-full belowfooter'>
@@ -45,7 +43,9 @@ const Footer = () => {
       </Tilt>
     </div>
     <div className='lg:flex hidden justify-end' id='dotDiv'>
-      <img src={dots} alt="dots" />
+      <AttentionSeeker>
+        <img src={dots} alt="dots" />
+      </AttentionSeeker>
     </div>
     </>
   )

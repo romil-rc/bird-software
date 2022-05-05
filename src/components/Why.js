@@ -8,6 +8,7 @@ import contactForm from '../assets/contactForm.svg';
 import '../styles/why.css';
 import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
+import { Fade, Zoom, JackInTheBox, AttentionSeeker } from "react-awesome-reveal";
 
 function Tilt(props) {
     const { options, ...rest } = props;
@@ -37,33 +38,45 @@ const Why = () => {
 
   return (
     <div id='why'>
-        <p className='text-[#16FCD2] font-medium text-lg tracking-widest'>Why</p>
-        <p className='font-semibold text-xl'>WHY WE ARE THE BEST?</p>
-        
+        <Fade direction='up' duration={1500}>
+            <p className='text-[#16FCD2] font-medium text-lg tracking-widest'>Why</p>
+            <p className='font-semibold text-xl'>WHY WE ARE THE BEST?</p>
+        </Fade>
+
         <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-1 sm:gap-4 md:gap-4 lg:gap-4 sm:place-items-center md:place-items-center lg:place-items-center sm:py-28 md:py-28 lg:py-28 p-5 text-left">
-            <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='01'>
-                <p className='font-semibold text-lg'>WE UNDERSTAND YOUR NEEDS</p>
-                <p className='text-xs tracking-widest opacity-70 leading-loose'>Merklabs totally relates to your concern and the significance , the security of smart contract carries , we comprehend the vulnerabilities and give out the promise of security through auditing it and removing all the errors of the smart contracts</p>
-            </div>
-            <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='02'>
-                <p className='font-semibold text-lg'>WE VERIFY AND RECTIFY</p>
-                <p className='text-xs tracking-widest opacity-70 leading-loose'>Verifying the vulnerabilities of the contract , we also provide the best suggestion for rectifications. Omitting out any bugs and making your smart contract error free .</p>
-            </div>
-            <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='03'>
-                <p className='font-semibold text-lg'>WE HAVE ALL</p>
-                <p className='text-xs tracking-widest opacity-70 leading-loose'>We not only provide you with security but also develop efficient smart contracts to suit your needs and requirements. Ranging from various categories we are here to assist the clients from creation of smart contracts to dApps and Defis.</p>
-            </div>
-            <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='04'>
-                <p className='font-semibold text-lg'>WE ADD VALUE TO YOUR IDEAS</p>
-                <p className='text-xs tracking-widest opacity-70 leading-loose'>Team Marklabs put in the best of its efforts to give out incredible results. We ensure and prioritize client satisfaction and exhibit results that match your expectations.Adding value to your projects is our ultimate goal.</p>
-            </div>
+            <Zoom>
+                <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='01'>
+                    <p className='font-semibold text-lg'>WE UNDERSTAND YOUR NEEDS</p>
+                    <p className='text-xs tracking-widest opacity-70 leading-loose'>Merklabs totally relates to your concern and the significance , the security of smart contract carries , we comprehend the vulnerabilities and give out the promise of security through auditing it and removing all the errors of the smart contracts</p>
+                </div>
+            </Zoom>
+            <Zoom>
+                <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='02'>
+                    <p className='font-semibold text-lg'>WE VERIFY AND RECTIFY</p>
+                    <p className='text-xs tracking-widest opacity-70 leading-loose'>Verifying the vulnerabilities of the contract , we also provide the best suggestion for rectifications. Omitting out any bugs and making your smart contract error free .</p>
+                </div>
+            </Zoom>
+            <Zoom>
+                <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='03'>
+                    <p className='font-semibold text-lg'>WE HAVE ALL</p>
+                    <p className='text-xs tracking-widest opacity-70 leading-loose'>We not only provide you with security but also develop efficient smart contracts to suit your needs and requirements. Ranging from various categories we are here to assist the clients from creation of smart contracts to dApps and Defis.</p>
+                </div>
+            </Zoom>
+            <Zoom>
+                <div className='sm:w-auto md:w-auto lg:w-96 w-auto' id='04'>
+                    <p className='font-semibold text-lg'>WE ADD VALUE TO YOUR IDEAS</p>
+                    <p className='text-xs tracking-widest opacity-70 leading-loose'>Team Marklabs put in the best of its efforts to give out incredible results. We ensure and prioritize client satisfaction and exhibit results that match your expectations.Adding value to your projects is our ultimate goal.</p>
+                </div>
+            </Zoom>
         </div>
 
         <div id='client' className='space-y-16'>
-            <div className='flex flex-col items-center space-y-5'>
-                <p className='text-[#618DFF] font-medium text-lg tracking-wider'>Our Client Review</p>
-                <p className='text-sm w-80 leading-loose'>Subscribe to our newsletter for daily/weekly update of our products and services.</p>
-            </div>
+            <Fade direction='up' duration={1500}>
+                <div className='flex flex-col items-center space-y-5'>
+                    <p className='text-[#618DFF] font-medium text-lg tracking-wider'>Our Client Review</p>
+                    <p className='text-sm w-80 leading-loose'>Subscribe to our newsletter for daily/weekly update of our products and services.</p>
+                </div>
+            </Fade>
             <div className='sm:flex sm:justify-evenly md:flex md:justify-evenly lg:flex lg:justify-evenly p-5 sm:p-0 md:p-0 lg:p-0'>
                 <div className='relative p-7 w-80 h-80 border space-y-3 rounded-[20px] -z-10 bg-transparent sm:block md:block lg:block hidden'>
                     <p className='text-[#888888] text-xs text-left'>01 FEB, 2019 | TECHNOLOGY</p>
@@ -99,36 +112,51 @@ const Why = () => {
         </div>
         <div id='neon7'>
             <img src={neon7} alt="" />
-            <hr className='hidden sm:hidden md:block lg:block' id='hr2' />
+            <JackInTheBox>
+                <hr className='hidden sm:hidden md:block lg:block' id='hr2' />
+            </JackInTheBox>
         </div>
         <div className='sm:flex sm:justify-evenly md:flex md:justify-evenly lg:flex lg:justify-evenly' id="contact">
             <div className='text-left sm:space-y-8 md:space-y-8 lg:space-y-8 space-y-4 sm:w-96 md:w-96 lg:w-96 w-auto sm:py-5 md:py-5 lg:py-5 p-5'>
-                <p className='text-[#16FCD2]'>CONTACT</p>
-                <p className='sm:text-2xl md:text-2xl lg:text-2xl text-xl font-bold'>We love receiving messages from you, we are waiting for it.</p>
+                <Fade direction='up' duration={1500}>
+                    <p className='text-[#16FCD2]'>CONTACT</p>
+                    <p className='sm:text-2xl md:text-2xl lg:text-2xl text-xl font-bold'>We love receiving messages from you, we are waiting for it.</p>
+                </Fade>
                 <div className='flex space-x-5'>
-                    <div className=''>
-                        <img className='h-14 w-14' src={phone} alt="phone" />
-                    </div>
-                    <div className='flex flex-col justify-center text-left'>
-                        <p className='opacity-50'>Phone</p>
-                        <p className='font-semibold text-lg'>+62 1234 8921</p>
-                    </div>
+                    <AttentionSeeker effect='heartBeat'>
+                        <div className=''>
+                            <img className='h-14 w-14' src={phone} alt="phone" />
+                        </div>
+                    </AttentionSeeker>
+                    <Fade direction='up'>
+                        <div className='flex flex-col justify-center text-left'>
+                            <p className='opacity-50'>Phone</p>
+                            <p className='font-semibold text-lg'>+62 1234 8921</p>
+                        </div>
+                    </Fade>
                 </div>
                 <div className='flex space-x-5'>
-                    <div className=''>
-                        <img className='h-14 w-14' src={email} alt="phone" />
-                    </div>
-                    <div className='flex flex-col justify-center text-left'>
-                        <p className='opacity-50'>Email</p>
-                        <p className='font-semibold text-lg'>support@MerkLabs.tld</p>
-                    </div>
+                    <AttentionSeeker effect='heartBeat'>
+                        <div className=''>
+                            <img className='h-14 w-14' src={email} alt="phone" />
+                        </div>
+                    </AttentionSeeker>
+                    <Fade direction='up'>
+                        <div className='flex flex-col justify-center text-left'>
+                            <p className='opacity-50'>Email</p>
+                            <p className='font-semibold text-lg'>support@MerkLabs.tld</p>
+                        </div>
+                    </Fade>
                 </div>
             </div>
             <div className='sm:p-0 md:p-0 lg:p-0 p-5'>
-                <img className='h-96 w-full' src={contactForm} alt="contactform" />
+                <JackInTheBox>
+                    <img className='h-96 w-full' src={contactForm} alt="contactform" />
+                </JackInTheBox>
             </div>
         </div>
         <div className='md:flex md:justify-center md:p-0 lg:flex lg:justify-center lg:p-0 p-5' id='lastSection'>
+            <AttentionSeeker effect='pulse' duration={1500}>
             <div className='md:flex md:justify-center lg:flex lg:justify-center bg-white bg-opacity-5 md:space-x-3 lg:space-x-3 space-y-6 md:space-y-0 lg:space-y-0 rounded-2xl p-6'>
                 <p className='font-semibold text-xl sm:w-auto md:w-96 lg:w-96 w-auto text-left'>We've prepared everything, it's time for you to tell the problem</p>
                 <motion.div className='expBtn text-left p-5 font-semibold'
@@ -148,6 +176,7 @@ const Why = () => {
                     <p className='cursor-pointer inline-block px-10'>Ask</p>
                 </motion.div>
             </div>
+            </AttentionSeeker>
         </div>
     </div>
   )
