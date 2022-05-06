@@ -10,6 +10,7 @@ import line from '../assets/line.svg';
 import '../styles/home.css';
 import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
+import ParticlesBg from 'particles-bg';
 
 function Tilt(props) {
     const { options, ...rest } = props;
@@ -39,6 +40,7 @@ const options = {
 const Home = () => {
 
   return (
+    <>
     <div className='lg:flex justify-between flex-grow lg:p-5 p-5'>
         <div className='lg:flex flex-col space-y-20 hidden'>
             <div className='space-y-1 pt-6'>
@@ -117,6 +119,8 @@ const Home = () => {
             <img src={line} className="pl-3 lg:flex hidden" alt="smgi" />
         </div>
     </div>
+    <ParticlesBg type="cobweb" color='#ffffff' bg={true} />
+    </>
   )
 }
 
