@@ -8,7 +8,7 @@ import insta from '../assets/insta.svg';
 import twt from '../assets/twt.svg';
 import line from '../assets/line.svg';
 import '../styles/home.css';
-import { motion, transform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
 // import ParticlesBg from 'particles-bg';
 import { useSpring, animated } from 'react-spring';
