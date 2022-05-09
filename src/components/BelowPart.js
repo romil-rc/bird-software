@@ -71,7 +71,11 @@ const BelowPart = () => {
             <div className='hidden sm:hidden md:w-1/2 lg:w-1/2 md:flex lg:flex' id='right'>
                 <div className='z-30'>
                     <img className='z-0' src={glass} alt="glass" id='glass' />
-                    <img className='z-40' src={timba} alt="timba" id='timba' />
+                    <motion.img className='z-40' src={timba} alt="timba" id='timba' 
+                        initial={{ opacity: 0.4 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ ease: "linear", duration: 1, repeat: Infinity, repeatType: 'mirror' }}
+                    />
                     <img className='z-30' src={stick} alt="stick" id='stick' />
                 </div>
                 <div className='text-left space-y-10' id='over'>

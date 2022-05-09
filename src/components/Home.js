@@ -8,9 +8,10 @@ import insta from '../assets/insta.svg';
 import twt from '../assets/twt.svg';
 import line from '../assets/line.svg';
 import '../styles/home.css';
-import { motion } from 'framer-motion';
+import { motion, transform } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
-import ParticlesBg from 'particles-bg';
+// import ParticlesBg from 'particles-bg';
+import { useSpring, animated } from 'react-spring';
 
 function Tilt(props) {
     const { options, ...rest } = props;
@@ -20,12 +21,9 @@ function Tilt(props) {
         VanillaTilt.init(tilt.current, options);
     }, [options]);
 
-    return <motion.img 
+    return <animated.img 
         src={bitcoinLogo} 
-        alt="nitcoinlogo" 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration:1.5 }}
+        alt="bitcoinlogo" 
         ref={tilt} 
         {...rest} 
     />;
@@ -38,6 +36,22 @@ const options = {
 };
 
 const Home = () => {
+
+    const styles = useSpring({
+        loop: true,
+        // to: [
+        //     { x: 25, y: 0 },
+        //     { x: 25, y: 25 },
+        //     { x: 0, y: 25 },
+        //     { x: 0, y: 0 },
+        // ],
+        // from: { x: 0, y: 0 },
+        to:[
+            { opacity: 1 },
+            { opacity: 0.6 }
+        ],
+        from: { opacity: 0.6 }
+      })
 
   return (
     <>
@@ -71,7 +85,11 @@ const Home = () => {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
             >
-                <p className='lg:text-5xl text-2xl font-bold text-left leading-tight'>MERKLABS BLOCKCHAIN DEVELOPMENT AND SECURITY SOLUTIONS</p>
+                <motion.p className='lg:text-5xl text-2xl font-bold text-left leading-tight'
+                    initial={{ textShadow: "0px 0px 0px rgb(255, 255, 255)" }}
+                    animate={{ textShadow: "2px 3px 8px rgb(255, 255, 255)" }}
+                    transition={{ ease: "linear", duration: 1, repeat: Infinity, repeatType: 'mirror' }}
+                >MERKLABS BLOCKCHAIN DEVELOPMENT AND SECURITY SOLUTIONS</motion.p>
                 <p className='lg:w-[36rem] text-left text-lg font-semibold'>We provide blockchain development services and also assure you comprehensive security in blockchain development</p>
                 <motion.div className='expBtn text-left p-5 font-semibold'
                     whileHover={{
@@ -90,7 +108,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration:1.5 }}
             />
-            <Tilt className="image2" options={options} />
+            <Tilt style={styles} className="image2" options={options} />
         </div>
         <div className='lg:pt-32 lg:pr-5 lg:space-y-10 flex lg:block pt-28 justify-evenly'>
             {/* <img src={socialMediaIcon} className="pt-10" alt="smgi" /> */}
@@ -119,7 +137,7 @@ const Home = () => {
             <img src={line} className="pl-3 lg:flex hidden" alt="smgi" />
         </div>
     </div>
-    <ParticlesBg type="cobweb" color='#ffffff' bg={true} />
+    {/* <ParticlesBg type="cobweb" color='#ffffff' bg={true} /> */}
     </>
   )
 }
